@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KhmerGlobe Voyages — Discover Cambodia & The World</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header class="navbar">
+        <div class="logo">
+            <span class="logo-icon">✈️</span> KhmerGlobe<span class="highlight">.Voyages</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#destinations">Destinations</a>
+            <a href="#local-gems">Local Gems (Cambodia)</a>
+            <a href="#global-network">Global Network</a>
+            <a href="#about">About Us</a>
+        </nav>
+        <div class="nav-actions">
+            <a href="#contact" class="btn btn-primary">Plan a Trip</a>
+        </div>
+    </header>
+
+    <!-- Hero Section with Quick Search Filter Bar -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <span class="badge">🏛️ Headquartered in Phnom Penh, Cambodia</span>
+            <h1>Explore The World With <span class="gradient-text">100+ Global Partners</span></h1>
+            <p>From the mystical temples of Angkor Wat to global wonders across Asia, America, and beyond. Your journey starts with local expertise and worldwide reach.</p>
+            
+            <!-- Trip Finder Bar -->
+            <div class="search-bar-container">
+                <div class="search-field">
+                    <label>Destination</label>
+                    <select id="destination-select">
+                        <option value="all">All Destinations</option>
+                        <optgroup label="Local Gems (Cambodia)">
+                            <option value="siem-reap">Siem Reap (Angkor Wat)</option>
+                            <option value="phnom-penh">Phnom Penh (Capital)</option>
+                            <option value="koh-kong">Koh Kong (Islands & Mangroves)</option>
+                        </optgroup>
+                        <optgroup label="International Countries">
+                            <option value="cambodia">Cambodia Tours</option>
+                            <option value="vietnam">Vietnam</option>
+                            <option value="laos">Laos</option>
+                            <option value="china">China</option>
+                            <option value="india">India</option>
+                            <option value="usa">USA</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div class="search-field">
+                    <label>Travel Style</label>
+                    <select>
+                        <option>Cultural Heritage</option>
+                        <option>Luxury Adventure</option>
+                        <option>Nature & Wildlife</option>
+                        <option>Family & Group</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary search-btn">Search Trips</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach Stats Bar -->
+    <section class="stats-banner">
+        <div class="stats-grid">
+            <div class="stat-box">
+                <h3>100+</h3>
+                <p>Partner Agencies Worldwide</p>
+            </div>
+            <div class="stat-box">
+                <h3>15+ Years</h3>
+                <p>Cambodian Tourism Excellence</p>
+            </div>
+            <div class="stat-box">
+                <h3>6 Countries</h3>
+                <p>Core Featured Destinations</p>
+            </div>
+            <div class="stat-box">
+                <h3>24/7</h3>
+                <p>Global Concierge Support</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Local Cambodian Gems Section -->
+    <section class="destination-section" id="local-gems">
+        <div class="section-title">
+            <span class="badge">Our Homeland Expertise</span>
+            <h2>Discover Local Cambodian <span class="gradient-text">Treasures</span></h2>
+            <p>Experience the heart of the Khmer Kingdom with exclusive local guides and insider access.</p>
+        </div>
+
+        <div class="destination-grid">
+            <!-- Siem Reap -->
+            <div class="dest-card">
+                <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1542359649-31e03cd4d909?auto=format&fit=crop&w=800&q=80')">
+                    <span class="tag">Must Visit</span>
+                </div>
+                <div class="dest-info">
+                    <h3>Siem Reap</h3>
+                    <p class="location">📍 Cambodia</p>
+                    <p class="desc">Home to majestic Angkor Wat, ancient jungle temples, and vibrant night markets.</p>
+                    <div class="dest-footer">
+                        <span class="price">From $350</span>
+                        <a href="#contact" class="btn-text">Book Local Tour &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Phnom Penh -->
+            <div class="dest-card">
+                <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1596422846543-75c6fc197f07?auto=format&fit=crop&w=800&q=80')">
+                    <span class="tag">Capital Vibes</span>
+                </div>
+                <div class="dest-info">
+                    <h3>Phnom Penh</h3>
+                    <p class="location">📍 Cambodia (Our HQ)</p>
+                    <p class="desc">Riverside serenity, the Royal Palace, and a booming culinary and cultural scene.</p>
+                    <div class="dest-footer">
+                        <span class="price">From $250</span>
+                        <a href="#contact" class="btn-text">Book City Tour &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Koh Kong -->
+            <div class="dest-card">
+                <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80')">
+                    <span class="tag">Eco Paradise</span>
+                </div>
+                <div class="dest-info">
+                    <h3>Koh Kong</h3>
+                    <p class="location">📍 Cambodia</p>
+                    <p class="desc">Untouched pristine islands, mangrove river safaris, and luxury eco-lodges.</p>
+                    <div class="dest-footer">
+                        <span class="price">From $420</span>
+                        <a href="#contact" class="btn-text">Book Eco Escape &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- International Destinations Section -->
+    <section class="destination-section alt-bg" id="destinations">
+        <div class="section-title">
+            <span class="badge">Global Horizons</span>
+            <h2>Explore International <span class="gradient-text">Destinations</span></h2>
+            <p>Seamlessly coordinated through our network of 100+ trusted partner agencies worldwide.</p>
+        </div>
+
+        <div class="destination-grid">
+            <!-- Vietnam -->
+            <div class="dest-card">
+                <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="dest-info">
+                    <h3>Vietnam</h3>
+                    <p class="location">🌏 Southeast Asia</p>
+                    <p class="desc">Cruise Ha Long Bay, walk through Hoi An lantern streets, and taste world-class street food.</p>
+                    <div class="dest-footer">
+                        <span class="price">From $490</span>
+                        <a href="#contact" class="btn-text">Explore &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Laos -->
+            <div class="dest-card">
+                <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="dest-info">
+                    <h3>Laos</h3>
+                    <p class="location">🌏 Southeast Asia</p>
+                    <p class="desc">Discover the serene temples of Luang Prabang, waterfalls, and peaceful Mekong river landscapes.</p>
+                    <div class="dest-footer">
+                        <span class="price">From $450</span>
+                        <a href="#contact" class="btn-text">Explore &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- China -->
+            <div class="dest-card">
+                <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1508804185872-d7badad00f7d?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="dest-info">
+                    <h3>China</h3>
+                    <p class="location">🌏 East Asia</p>
+                    <p class="desc">Walk the Great Wall, view futuristic skylines in Shanghai, and explore ancient imperial history.</p>
+                    <div class="dest-footer">
+                        <span class="price">From $890</span>
+                        <a href="#contact" class="btn-text">Explore &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- India -->
+            <div class="dest-card">
+                <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="dest-info">
+                    <h3>India</h3>
+                    <p class="location">🌏 South Asia</p>
+                    <p class="desc">Witness the breathtaking Taj Mahal, vibrant cultural festivals, and spiritual heritage trails.</p>
+                    <div class="dest-footer">
+                        <span class="price">From $750</span>
+                        <a href="#contact" class="btn-text">Explore &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- USA -->
+            <div class="dest-card">
+                <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1485738422979-f5c462d49f74?auto=format&fit=crop&w=800&q=80')"></div>
+                <div class="dest-info">
+                    <h3>USA</h3>
+                    <p class="location">🌎 North America</p>
+                    <p class="desc">Experience iconic coast-to-coast adventures, from New York City's energy to national parks.</p>
+                    <div class="dest-footer">
+                        <span class="price">From $1,290</span>
+                        <a href="#contact" class="btn-text">Explore &rarr;</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cambodia Multi-Country Combo -->
+            <div class="dest-card">
+                <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&w=800&q=80')">
+                    <span class="tag">Multi-Country</span>
+                </div>
+                <div class="dest-info">
+                    <h3>Indochina Grand Tour</h3>
+                    <p class="location">📍 Cambodia • Vietnam • Laos</p>
+                    <p class="desc">The ultimate 14-day multi-destination package curated seamlessly by our local alliance.</p>
+                    <div class="dest-footer">
+                        <span class="price">From $1,450</span>
+                        <a href="#contact" class="btn-text">Explore &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Network Section -->
+    <section class="network-section" id="global-network">
+        <div class="network-container">
+            <div class="network-text">
+                <span class="badge">World-Class Alliance</span>
+                <h2>Powered by <span class="gradient-text">100+ Global Partner Agencies</span></h2>
+                <p>Based in the vibrant capital of Phnom Penh, KhmerGlobe Voyages bridges local Cambodian hospitality with a powerhouse network of over 100 specialized agencies scattered across every continent. Wherever you choose to go—whether scaling the Himalayas in India or exploring modern marvels in China and the USA—our vetted global partners ensure you receive 24/7 local support, premium pricing, and unforgettable experiences.</p>
+                <div class="network-features">
+                    <div class="nf-item">✔ Vetted Local Operators Worldwide</div>
+                    <div class="nf-item">✔ Seamless Cross-Border Itinerary Booking</div>
+                    <div class="nf-item">✔ Multilingual Support & Local Concierge</div>
+                </div>
+            </div>
+            <div class="network-visual">
+                <div class="globe-card">
+                    <h3>🌍 Global Synergy</h3>
+                    <p>1 Hub (Phnom Penh) + 100 Allied Agencies = Limitless Travel Potential.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact / Booking Inquiry Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-box">
+            <h2>Start Planning Your Next Journey</h2>
+            <p>Connect with our expert travel designers in Phnom Penh or coordinate through our global network.</p>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Inquiry sent successfully! Our Phnom Penh team or a global partner will reach out within 24 hours.');">
+                <div class="form-row">
+                    <input type="text" placeholder="Your Full Name" required>
+                    <input type="email" placeholder="Your Email Address" required>
+                </div>
+                <div class="form-row">
+                    <select>
+                        <option>Select Preferred Destination</option>
+                        <option>Siem Reap (Cambodia)</option>
+                        <option>Phnom Penh (Cambodia)</option>
+                        <option>Koh Kong (Cambodia)</option>
+                        <option>Vietnam</option>
+                        <option>Laos</option>
+                        <option>China</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>Multi-Country Package</option>
+                    </select>
+                    <input type="text" placeholder="Estimated Travel Date">
+                </div>
+                <textarea placeholder="Tell us about your dream trip (Preferences, group size, budget)..." rows="4"></textarea>
+                <button type="submit" class="btn btn-primary btn-large">Submit Trip Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="logo">✈️ KhmerGlobe<span class="highlight">.Voyages</span></div>
+                <p>Headquartered in Phnom Penh, Cambodia. Connecting travelers globally with 100+ trusted partner agencies.</p>
+            </div>
+            <div class="footer-links-group">
+                <h4>Destinations</h4>
+                <a href="#local-gems">Siem Reap</a>
+                <a href="#local-gems">Phnom Penh</a>
+                <a href="#local-gems">Koh Kong</a>
+                <a href="#destinations">Vietnam & Laos</a>
+                <a href="#destinations">China, India & USA</a>
+            </div>
+            <div class="footer-links-group">
+                <h4>Company</h4>
+                <a href="#global-network">Our 100+ Global Partners</a>
+                <a href="#about">About Cambodia HQ</a>
+                <a href="#contact">Contact Support</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 KhmerGlobe Voyages Co., Ltd. All rights reserved. Registered in Phnom Penh, Cambodia.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
